@@ -97,6 +97,21 @@
 
          --accent-1: hsl(231, 87%, 25%);
          --accent-2: hsl(193, 90%, 40%);
+         --accent-3: hsl(330, 75%, 52%);
+         --accent-4: hsl(36, 95%, 48%);
+
+         --shadow-sm: 0 2px 8px rgba(30, 30, 80, 0.06);
+         --shadow-md: 0 10px 30px rgba(30, 30, 80, 0.08);
+         --shadow-lg: 0 24px 60px rgba(30, 30, 80, 0.1);
+         --shadow-glow: 0 0 40px hsla(258, 78%, 56%, 0.2);
+
+         --heat-0: rgba(20, 20, 50, 0.06);
+         --heat-1: hsla(258, 78%, 56%, 0.25);
+         --heat-2: hsla(258, 78%, 56%, 0.48);
+         --heat-3: hsla(230, 80%, 52%, 0.72);
+         --heat-4: hsla(193, 90%, 40%);
+
+         color-scheme: light;
         }
         </style>
 

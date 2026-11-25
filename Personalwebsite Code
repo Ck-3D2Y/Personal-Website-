@@ -379,6 +379,81 @@
             align-items: center;
             transition: background-color var(--dur) var(--ease), border-color var(--dur) var(--ease), height var(--dur) var(--ease);
         }
+
+        .nav.is-scrolled{
+            --nav-h:60px;
+            background: var(--bg-overlay);
+            backdrop-filter: blur(18px) saturate(160%)
+            border-bottom-color: var(--border);
+        }
+        .nav_logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 800;
+            font-size: 1.1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .nav_logo-mark{
+            display: grid;
+            place-items:center;
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            background: var(--gradient);
+            color: #fff;
+            font-size: 0.85rem;
+            font-weight: 800;
+            box-shadow: var(--shadow-glow);
+            transition: transform var(--dur) var(--ease-bounce);
+        }
+
+        .nav_logo-mark{
+            transform: rotate(-8deg) scale(1.08);
+        }
+
+        .nav_links{
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            list-style: none;
+        }
+
+        .nav_link:hover{
+            color: var(--text);
+            background: var(--surface-strong);
+        }
+
+        .nav_link.is-active::after{
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 2px;
+            width: 5px;
+            height: 5px;
+            margin-left: -2.5px;
+            border-radius: 50%;
+            background: var(--graident);
+        }
+
+        .nav_actions{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .icon-btn{
+            display: grid;
+            place-items: center;
+             width: 40px;
+             height: 40px;
+             border-radius: var(--radius-full);
+             border: 1px solid var(--border);
+             background: var(--text-muted);
+             color: var(--text-muted);
+             transition: all var(--dur-fast) var(--ease);
+        }
         </style>
 
     </head>
